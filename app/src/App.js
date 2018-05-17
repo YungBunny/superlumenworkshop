@@ -34,3 +34,7 @@ class App extends Component {
 }
 
 export default App;
+
+// create actions with action creators
+// dispatch actions
+// reducers take the current state and the action and calculate the new state

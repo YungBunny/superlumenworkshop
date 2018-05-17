@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 import { inc } from './actions';
 
 const Count = props => {
-    const {theCounterIsAt } = props;
+    const { theCounterIsAt, putTheNumberUp } = props;
     return <div>
     <h2>Count FTW</h2>
     <p>The counter is at {theCounterIsAt}</p>
     <p>
-        <button>
+        <button onClick={putTheNumberUp}>
         +1
         </button>
     </p>
@@ -30,6 +30,3 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(Count);
 
-// create actions with action creators
-// dispatch actions
-// reducers take the current state and the action and calculate the new state

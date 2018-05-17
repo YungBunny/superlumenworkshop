@@ -12,7 +12,7 @@ const reducer = (state = empty, action) => {
 // const type = action.type
 // const payload = action.payload
 
-    if (type === "ActionTypes.INC") {
+    if (type === ActionTypes.INC) {
         return { ...state, counter: state.counter + 1};
     }
     return state;
